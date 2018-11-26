@@ -32,21 +32,21 @@ data = pd.read_csv(r'C:\Users\jimka\Dropbox\Programmeren\Spyder\S&P500ticdata\da
 
 
 # RNN neural network
-
-model = Sequential()
-model.add(LSTM(128, imput_shape=(X_train.shape[1:]), return_sequences = True))
-model.add(Dropout(0,2))
-model.add(Batchnormalization())
-
-model = Sequential()
-model.add(LSTM(128, imput_shape=(X_train.shape[1:]), return_sequences = True))
-model.add(Dropout(0.1))
-model.add(Batchnormalization())
-
-model = Sequential()
-model.add(LSTM(128, imput_shape=(X_train.shape[1:])))
-model.add(Dropout(0.2))
-model.add(Batchnormalization())
+#
+#model = Sequential()
+#model.add(LSTM(128, imput_shape=(X_train.shape[1:]), return_sequences = True))
+#model.add(Dropout(0,2))
+#model.add(Batchnormalization())
+#
+#model = Sequential()
+#model.add(LSTM(128, imput_shape=(X_train.shape[1:]), return_sequences = True))
+#model.add(Dropout(0.1))
+#model.add(Batchnormalization())
+#
+#model = Sequential()
+#model.add(LSTM(128, imput_shape=(X_train.shape[1:])))
+#model.add(Dropout(0.2))
+#model.add(Batchnormalization())
 
 model.add(Dense(32, activation = 'relu'))
 model.add(Dropout(0.2))
