@@ -25,6 +25,7 @@ data = pd.read_csv(r'C:\Users\jimka\Dropbox\Programmeren\Spyder\S&P500ticdata\da
 
 
 # regression statsmodels
+# new branchS
 #Y_train = train_data['ln_r_d']
 #X_train = train_data[['AR(1)','AR(2)','AR(3)','vola_t-1','vola_t-2','vola_t-3', 'skew_t-1']]
 #X_test = test_data[['AR(1)','AR(2)','AR(3)','vola_t-1','vola_t-2','vola_t-3', 'skew_t-1']]
